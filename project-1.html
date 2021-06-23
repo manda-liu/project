@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- plugins CSS -->
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Site JS -->
+    <link href="Content/style.css" rel="stylesheet" />
+    <title>Manda Liu</title>
+</head>
+
+<body class="page">
+    <!-- <section class="main-container"> -->
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <a href="index.html" class="col-md-3"><h1>Manda Liu</h1></a>
+                
+                <div class="navWrap">
+                    <button class="navToggle" type="button">
+                        <i class="fa fa-navicon"></i>
+                      </button>
+                <nav>
+                    <div>
+                        <a href="index.html#aboutUs" class="scrollTop active">關於我</a>
+                    </div>
+                    <div>
+                        <a href="index.html#skill" class="scrollTop">前端設計技能</a>
+                    </div>
+                    <div>
+                        <a href="index.html#experience" class="scrollTop">工作經歷</a>
+                    </div>
+                    
+                    <div>
+                        <a href="index.html#projectExperience" class="scrollTop">專案經歷</a>
+                    </div>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="banner w-100">
+        <img src="Images/projectBanner.jpg" alt="" class="w-100">
+        <div class="container">
+            <h2>專案經歷</h2>
+           <div class="map"><a href="index.html">首頁</a><i>/</i><span>雲林古坑綠色隧道雲端市集</span></div>
+           <div class="content">
+            <h3>雲林古坑綠色隧道雲端市集</h3>
+            <div class="submenu">
+                <a href="">網頁板</a>
+                <a href="">行動版</a>
+            </div>
+            <img src="Images/project-1b.jpg" alt="">
+            <div class="bottom">
+                <a href="">前往網站</a>
+            </div>
+           </div>
+        </div>
+    </div>
+    <div class="container page">
+        
+    </div>
+
+    </div>
+    <!-- </section> -->
+    <footer>
+        <img src="Images/myPhoto.png" alt="">
+        劉美滿 <br /> <a href="mailto:liu.molita055@gmail.com"><i class="fa fa-envelope-o"></i>liu.molita055@gmail.com</a>
+    </footer>
+    <div class="backtop" style="display: none;"><i class="fa fa-angle-up"></i></div>
+</body>
+
+</html>
+
+
+<!-- plugins JS -->
+<script type="text/javascript" src="Script/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="Script/slick.min.js"></script>
+<!-- Site JS -->
+<!-- <script type="text/javascript" src="Script/js.js"></script> -->
+<script>
+    (function ($) {
+
+$('document').ready(function () {
+  var maxHeight = '';
+  var mediaWidth = $(window).width();
+  if (mediaWidth > 576) {
+ 
+
+  }
+
+  if (mediaWidth < 576) {
+    $(".navToggle").click(function () {
+      $("nav").slideToggle();
+      return false;
+    });
+
+  }
+
+
+
+  // go back top
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 60) {
+        $(".backtop").fadeIn(200);
+    }
+    else {
+        $(".backtop").fadeOut(200);
+    }
+});
+
+    $(".backtop").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+    });
+
+});
+
+}(jQuery));
+
+</script>
